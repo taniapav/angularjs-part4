@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.min.js"></script>
+        <script src="assets/js/script.js"></script>
+        <title>Exercice 5</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <div ng-app="">
+        <h1>Ng-show & ng-hide</h1>
+
+        <a href="" ng-click="showme=true">Afficher</a>
+        <button ng-click="showme=false">Cacher</button>
+
+        <div class="wrapper">
+          <p ng-hide="showme">Premiere paragraphe!</p>
+          <p ng-show="showme"> deuxieme paragraphe!</p>
+        </div>
+
+      </div>
+
+</body>
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.min.js"></script>
+        <script src="assets/js/script.js"></script>
+        <title>Exercice 5</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body ng-app="AngularshowhideApp">
+
+        <div ng-controller="showhidectrl">
+
+        <input type="button" ng-click="isShowHide('show')" value="Afficher">
+         <input type="button" ng-click="isShowHide('hide')" value="Cacher">
+        <br />
+        <p ng-show="showpara" >Afficher le paragraphe</p><br />
+        <p ng-hide="hidepara">Cacher le paragraphe</p>
+        </div>
+</body>
+</html> -->
